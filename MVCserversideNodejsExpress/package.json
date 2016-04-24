@@ -1,0 +1,13 @@
+{
+  "name": "MVCserversideNodejsExpress",
+  "version": "0.0.0",
+  "description": "MVCserversideNodejsExpress",
+  "main": "app.js",
+  "author": {
+    "name": "XingW",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
