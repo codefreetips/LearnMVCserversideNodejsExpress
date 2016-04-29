@@ -55,7 +55,36 @@ app.get('/', function (req, res) {
 });
 
 
-app.listen(settings.globle.webPort, function () {
+app.listen(settings.globle.webPort, function (err) {
     console.log('ready for it');
     console.log('server running at http://' + settings.globle.localhost + ':' + settings.globle.webPort);
 })
+
+
+7) Modify the app.js  add "/book"
+
+
+app.get('/books', function (req, res) {
+    res.send('Hello foo books');
+});
+
+
+8) download free bootstrap template
+
+http://www.bootstrapzero.com/
+
+9) Create folders under the root
+public->css
+public->js
+src->views 
+
+10) Modify the app.js
+
+app.use(express.static('public'));
+app.use(express.static('src/views'));
+
+click http://localhost:9000/css/styles.css,  will see the css content
+click http://localhost:9000/index.html
+
+
+11) Modify the app.js
